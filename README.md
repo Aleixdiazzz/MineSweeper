@@ -1,4 +1,6 @@
 ### Cute Little MineSweeper
+---
+
 
 MineSweeper game using HTML, CSS and JS.
 
