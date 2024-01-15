@@ -12,12 +12,15 @@ let gameOver = false;
 let timer = 0;
 
 
-
-
 window.onload = function() {
     startGame();
 }
 
+function incrementSeconds() {
+    timer += 1;
+    document.getElementById("timer").innerText = timer;
+}
+var cancel = setInterval(incrementSeconds, 1000);
 
 
 
@@ -39,7 +42,6 @@ function setMines() {
 
 function startGame() {
     document.getElementById("minesCount").innerText = minesCount;
-    document.getElementById("timer").innerText = timer;
     document.getElementById("flagButton").addEventListener("click", setFlag);
     setMines();
     
